@@ -1,3 +1,15 @@
+# HeartBleed
+
+The Heartbleed bug (CVE-2014-0160) is a severe implementation flaw in the
+OpenSSL library, which enables attackers to steal data from the memory of
+the victim server. The contents of the stolen data depend on what is there
+in the memory of the server. It could potentially contain private keys, TLS
+session keys, user names, passwords, credit cards, etc. The vulnerability is in
+the implementation of the Heartbeat protocol, which is used by SSL/TLS to
+keep the connection alive. (See Report for more details)
+
+
+## How to run
 1. Run server.py 
 ```python3 server.py```
 
